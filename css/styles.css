@@ -1,5 +1,5 @@
 :root {
-  --primary-link-color: #0A68C6;
+  --primary-link-color: #005baf;
   --visited-link-color: #AF54CE;
   --button-color: #357b70;
   --button-color-active: #489c79;
@@ -65,11 +65,23 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .about-me-list {
   list-style-type: none;
+  padding: 0;
 }
 
   .about-me {
   margin: 0 auto;
   text-align: center;
+}
+
+.contact {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form-list {
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .profile__portrait {
