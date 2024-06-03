@@ -78,6 +78,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 
   .about-me {
   margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 200px;
   text-align: center;
 }
 
