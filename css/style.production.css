@@ -76,7 +76,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   padding: 0;
 }
 
-  .about-me {
+.about-me {
   margin: 0 auto;
   padding-left: 200px;
   padding-right: 200px;
@@ -191,6 +191,13 @@ margin: 20px;
 .grid__item:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.grid-image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sun {

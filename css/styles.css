@@ -167,6 +167,12 @@ margin: 20px;
   transform: scale(1.05);
 }
 
+.grid-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
