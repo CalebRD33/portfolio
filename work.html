@@ -34,7 +34,7 @@
         </header>
 
         <main>
-            <section>
+            <section class="work">
                 <h1 class="my-work">My Work</h1>
                 
                 <div class="grid">
@@ -43,29 +43,49 @@
                         <h2>Poke&#769mon App</h2>
                         <p>
                             In this simple pokemon app I used JavaScript to pull data from 
-                            an external API and created buttons that trigger a modal that i created using Bootstrap. 
+                            an external online API and created buttons that trigger a modal that i created using Bootstrap. 
                         </p>
-                        <a href="https://calebrd33.github.io/pokemon-app/" target="blank">Poke&#769dex App</a>
+                        <p>
+                            JavaScript<br>
+                            Bootstrap<br>
+                            CSS<br>
+                            HTML
+                        </p>
+                        <a href="https://calebrd33.github.io/pokemon-app/" target="blank">Poke&#769dex App Live</a>
                         <br>
                         <a href="https://github.com/CalebRD33/pokemon-app" target="blank">Check it out on Github</a>
                     </div>
                     <div class="grid__item">
-                        <h2>myFlix Server-Side</h2>
+                        <img src="img\myFlix_API.png" alt="myFlix API Screenshot" class="grid-image">
+                        <h2>myFlix API</h2>
                         <p>
                             The server-side of a myFlix app that uses URL endpoints to make calls to the database. 
-                            This REST API was built using Node.js. The database is hosted on MongoDB.
+                            This REST API was built using Node.js. The database is hosted on MongoDB and deployed through Heroku.
+                        </p>
+                        <p>
+                            Node.js<br>
+                            JavaScript<br>
+                            Express<br>
+                            Mongoose<br>
+                            Passport JWT
                         </p>
                         <a href="https://github.com/CalebRD33/myFlix" target="blank">Check it out on Github</a>
                     </div>
                     <div class="grid__item">
                         <img src="img\myFlix.png" alt="myFlix Screenshot" class="grid-image">
-                        <h2>myFlix Client-Side</h2>
+                        <h2>myFlix React</h2>
                         <p>
-                            The client-side of a myFlix app that shows viewers information about movies and has a profile view
-                             where users can change personal information, add to a list of favorite movies, 
-                             or delete their account. The UI was built using React framework.
+                            The myFlix React app shows viewers information about movies pulled from the myFlix
+                             API. Users have a profile view where they can change user information, 
+                            view a list of favorite movies, or delete their account. The UI was built using JavaScript and React framework.
                         </p>
-                        <a href="https://myflix-crd.netlify.app" target="blank">myFlix App</a>
+                        <p>
+                            React<br>
+                            React Bootstrap<br>
+                            JavaScript XML<br>
+                            SCSS
+                        </p>
+                        <a href="https://myflix-crd.netlify.app" target="blank">myFlix React Live</a>
                         <br>
                         <a href="https://github.com/CalebRD33/myFlix-client" target="blank">Check it out on Github</a>
                     </div>
@@ -76,25 +96,53 @@
                             Here i built a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. 
                             The application uses the Google Calendar API to fetch upcoming events. 
                         </p>
-                        <a href="https://calebrd33.github.io/meet/" target="blank">Meet App</a>
+                        <p>
+                            React<br>
+                            JavaScript<br>
+                            Recharts<br>
+                            Workbox<br>
+                            Jest-Cucumber<br>
+                            Puppeteer
+                        </p>
+                        <a href="https://calebrd33.github.io/meet/" target="blank">Meet App Live</a>
                         <br>
                         <a href="https://github.com/CalebRD33/meet" target="blank">Check it out on Github</a>
                     </div>
                     <div class="grid__item">
-                        <h2>Portfolio</h2>
+                        <img src="img\Chat_App.png" alt="Chat App Screenshot" class="grid-image">
+                        <h2>Echo Live Chat</h2>
                         <p>
-                            This was my first project as a student at CareerFoundry. I was responsible the basic HTML framework, using css for style, 
-                            and finally JavaScript to tie it all together.
+                            This simple mobile chat app was built using Gifted Chat and React Native. Users can login to their
+                            own account, choose a chat screen color, send messages, share their location, and share images. The app also uses 
+                            AsyncStorage and NetInfo to provide a limited offline experience when there is no connection.
                         </p>
-                        <a href="#">Check it out on Github</a>
+                        <p>
+                            React Native<br>
+                            JavaScript<br>
+                            Expo<br>
+                            Firebase<br>
+                            Babel
+                        </p>
+                        <a href="https://github.com/CalebRD33/Chat_App">Check it out on Github</a>
                     </div>
                     <div class="grid__item">
-                        <h2>Portfolio</h2>
+                        <img src="img\myFlix_Angular.png" alt="myFlix Angular Screenshot" class="grid-image">
+                        <h2>myFlix Angular</h2>
                         <p>
-                            This was my first project as a student at CareerFoundry. I was responsible the basic HTML framework, using css for style, 
-                            and finally JavaScript to tie it all together.
+                            Users can login and have a movies view, profile view, and favorites view. The app is essentially the same as the myFlix React app and makes calls to the
+                            myFlix Server-Side API. The difference is that I used TypeScript and Angular to create the UI.
                         </p>
-                        <a href="#">Check it out on Github</a>
+                        <p>
+                            Angular<br>
+                            TypeScript<br>
+                            SCSS<br>
+                            Express<br>
+                            RxJS<br>
+                            
+                        </p>
+                        <a href="https://calebrd33.github.io/myFlix-Angular/" target="blank">myFlix Angular Live</a>
+                        <br>
+                        <a href="https://github.com/CalebRD33/myFlix-Angular">Check it out on Github</a>
                     </div>
                 </div>
             </section>
@@ -103,9 +151,15 @@
         <footer class="page-footer">
             <p>Find me on...</p>
             <div class="social-media">
-                <img src="img/github_icon.svg" alt="Github">
-                <img src="img/twitter_icon.svg" alt="Twitter">
-                <img src="img/linkedin_icon.svg" alt="LinkedIn">
+                <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer">
+                    <img src="img/github_icon.svg" alt="Github">
+                </a>
+                <a href="https://careerfoundry.slack.com/team/U06MTBNUHP0" target="blank" rel="noopener noreferrer">
+                    <img src="img/slack_icon.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/calebrd33" target="blank" rel="noopener noreferrer">
+                    <img src="img/linkedin_icon.svg" alt="LinkedIn">
+                </a>
             </div>
             <a href="#">Back to top of page</a>
         </footer> 
