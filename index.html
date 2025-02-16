@@ -8,31 +8,75 @@
         <title>Caleb Dalrymple - Portfolio</title>
         <link rel="shortcut icon" href="img/favicon-32x32.png"> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     
     <body>
-        <header class="page-header">
-            <img src="img/crd_logo.png" alt="Caleb's personal logo" class="page-header__item">
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
+        <nav>
+            <div class="nav75">
+                <a href="#">
+                <img src="img/crd_logo.png" alt="Caleb's personal logo" class="page-header__item">
+                </a>
+
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <a href="files/Resume_Web-Dev.pdf">
+                            <button><i class="fas fa-download"></i>Download Resume</button>
+                        </a>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+        
+        
+        <header>
+            <div class="container">
+                <h1>MEET CALEB DALRYMPLE</h1>
+                <p>Passionately</p>
+                <p>Perfecting</p>
+                <p>Pixels</p>
+                <br/>
+                <h5>An energetic and playful individual who finds meaning out of solving problems for others</h5>
+                <br/>
+                <div class="header-buttons">
+                    <a href="files/Resume_Web-Dev.pdf">
+                        <button><i class="fas fa-download"></i>Download Resume</button>
+                    </a>
+                    <a href="mailto:CalebRD33@gmail.com">
+                        <button><i class="fas fa-envelope"></i>Send Email</button>
+                    </a>
+                </div>
+                
+                <div class="employment-history">
+                    <h6>EMPLOYMENT HISTORY</h6>
+                    <div class="work-history">
+                        <img src="img/LAX.jpg.webp" alt="LAX logo" class="work-history-item">
+                        <img src="img/SoFi_Stadium_Logo.svg.png" alt="Sofi Stadium logo" class="work-history-item">
+                        <img src="img/Suffolk.webp" alt="Suffolk logo" class="work-history-item">
+                        <img src="img/Caltrans.svg.png" alt="Caltran logo" class="work-history-item">
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <section class="profile">
-            <img src="img/profile-picture.png" class="profile__portrait" alt="A photograph of me!">
-            <h1>Hello World!</h1>
-            <p> 
-                My name is Caleb Dalrymple. I just completed a 10 month full-stack web development course with CareerFoundry and 
-                couldn’t be more excited to dive into the tech world! I’m eager to put my new skills into practice and contribute to 
-                impactful projects.
-            </p>
-            <a href="https://github.com/CalebRD33" target="_blank">Check out some of my code.</a>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project">
+                    <h3>Weather App</h3>
+                    <p>A weather forecasting app built with React and API integration.</p>
+                </div>
+            </div>
         </section>
 
         <section class="work">
@@ -150,6 +194,17 @@
             </div>
         </section>
 
+        <section class="about">
+            <img src="img/profile-picture.png" class="profile__portrait" alt="A photograph of me!">
+            <h1>Hello World!</h1>
+            <p> 
+                My name is Caleb Dalrymple. I just completed a 10 month full-stack web development course with CareerFoundry and 
+                couldn’t be more excited to dive into the tech world! I’m eager to put my new skills into practice and contribute to 
+                impactful projects.
+            </p>
+            <a href="https://github.com/CalebRD33" target="_blank">Check out some of my code.</a>
+        </section>
+
         <section class="about-me">
             <h1>Get to Know Me</h1>
             <hr class="custom-line">
@@ -226,12 +281,6 @@
                 </a>
                 <a href="https://careerfoundry.slack.com/team/U06MTBNUHP0" target="blank" rel="noopener noreferrer" class="media-links">
                     <img src="img/slack_icon.svg" alt="Twitter">
-                </a>
-                <a href="https://x.com/CalebelaC_" target="blank" rel="noopener noreferrer" class="media-links">
-                    <img src="img/twitter_icon.svg" alt="LinkedIn">
-                </a>
-                <a href="https://medium.com/@calebrd33" target="blank" rel="noopener noreferrer" class="media-links">
-                    <img src="img/medium_icon.svg" alt="LinkedIn">
                 </a>
             </div>
             <a href="#">Back to top of page</a>
