@@ -19,7 +19,7 @@
         <nav>
             <div class="nav75">
                 <a href="#">
-                <img src="img/crd_logo.png" alt="Caleb's personal logo" class="page-header__item">
+                <img src="img/crd-logo-2.png" alt="Caleb's personal logo" class="page-header__item">
                 </a>
 
                 <ul>
@@ -42,7 +42,7 @@
                 <p>Perfecting</p>
                 <p>Pixels</p>
                 <br/>
-                <h5>An energetic and playful individual who finds meaning out of solving problems for others</h5>
+                <h5>AN ENERGETIC AND PLAYFUL INDIVIDUAL WHO FINDS MEANING OUT OF SOLVING PROBLEMS FOR OTHERS</h5>
                 <br/>
                 <div class="header-buttons">
                     <a href="files/Resume_Web-Dev.pdf">
@@ -66,135 +66,92 @@
         </header>
 
         <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Portfolio Website</h3>
-                    <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="project">
-                    <h3>Weather App</h3>
-                    <p>A weather forecasting app built with React and API integration.</p>
+            <h1>Projects</h1>
+            <div class="myFlix">  
+                <div class="text-box">
+                    <p>
+                        The myFlix React app shows viewers information about movies pulled from the myFlix API. 
+                        Users have a profile view where they can change user information, view a list of favorite movies, 
+                        or delete their account. The UI was built using JavaScript and React framework.
+                    </p>  
+                    <div>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-node"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
+                    </div>
+                    <a href="https://github.com/CalebRD33/myFlix-React">
+                        <button><i class="fab fa-github"></i>Code</button>
+                    </a>
+                    <a href="https://myflix-crd.netlify.app/login">
+                        <button><i class="fas fa-power-off"></i>Demo</button>
+                    </a>
+                </div>                         
+                <img src="img/myFlix-laptop-phone.png">                
+            </div>
+
+            <div class="echo"> 
+                <img src="img/Echo-phonescreen.png">
+                <div class="text-box">
+                    <p>
+                        This simple mobile chat app was built using Gifted Chat and React Native. 
+                        Users can login to their own account, choose a chat screen color, send messages, share their location, and share images. 
+                        The content is stored on AWS Firestore and when connection is lost AsyncStorage and NetInfo are used to provide a limited offline experience.
+                    </p> 
+                    <div>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-aws"></i>
+                    </div> 
+                    <a href="files/Echo-live-chat-movie.mp4">
+                        <button><i class="fas fa-play"></i>Watch</button>
+                    </a>
+                    <a href="https://github.com/CalebRD33/Echo-Chat-App">
+                        <button><i class="fab fa-github"></i>Code</button>
+                    </a>                   
                 </div>
             </div>
-        </section>
 
-        <section class="work">
-            <h1 class="my-work">My Work</h1>
-            <hr class="custom-line">
-            
-            <div class="grid">
-                
-                <div class="grid__item">
-                    <h2>myFlix API</h2>
-                    <img src="img\myFlix_API.png" alt="myFlix API Screenshot" class="grid-image">
+            <div class="meet"> 
+                <div class="text-box">
                     <p>
-                        The server-side of a myFlix app that uses URL endpoints to make calls to the database. 
-                        This REST API was built using Node.js. The database is hosted on MongoDB and deployed through Heroku.
+                        Here I built a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. 
+                        The application uses the Google Calendar API to fetch upcoming events.
                     </p>
-                    <p>
-                        Node.js<br>
-                        JavaScript<br>
-                        Express<br>
-                        Mongoose<br>
-                        Passport JWT
-                    </p>
-                    <a href="https://github.com/CalebRD33/myFlix" target="blank">Check it out on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>myFlix React</h2>
-                    <img src="img\myFlix.png" alt="myFlix Screenshot" class="grid-image">
-                    <p>
-                        The myFlix React app shows viewers information about movies pulled from the myFlix
-                         API. Users have a profile view where they can change user information, 
-                        view a list of favorite movies, or delete their account. The UI was built using JavaScript and React framework.
-                    </p>
-                    <p>
-                        React<br>
-                        React Bootstrap<br>
-                        JavaScript XML<br>
-                        SCSS
-                    </p>
-                    <a href="https://myflix-crd.netlify.app" target="blank">myFlix React Live</a>
-                    <br>
-                    <a href="https://github.com/CalebRD33/myFlix-client" target="blank">Check it out on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>myFlix Angular</h2>
-                    <img src="img\myFlix_Angular.png" alt="myFlix Angular Screenshot" class="grid-image">
-                    <p>
-                        Users can login and have a movies view, profile view, and favorites view. The app is essentially the same as the myFlix React app and makes calls to the
-                        myFlix Server-Side API. The difference is that I used TypeScript and Angular to create the UI.
-                    </p>
-                    <p>
-                        Angular<br>
-                        TypeScript<br>
-                        SCSS<br>
-                        Express<br>
-                        RxJS<br>
-                        
-                    </p>
-                    <a href="https://calebrd33.github.io/myFlix-Angular/" target="blank">myFlix Angular Live</a>
-                    <br>
-                    <a href="https://github.com/CalebRD33/myFlix-Angular">Check it out on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Meet App</h2>
-                    <img src="img\Meet_App.png" alt="Meet App Screenshot" class="grid-image">
-                    <p>
-                        Here i built a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. 
-                        The application uses the Google Calendar API to fetch upcoming events. 
-                    </p>
-                    <p>
-                        React<br>
-                        JavaScript<br>
-                        Recharts<br>
-                        Workbox<br>
-                        Jest-Cucumber<br>
-                        Puppeteer
-                    </p>
-                    <a href="https://calebrd33.github.io/meet/" target="blank">Meet App Live</a>
-                    <br>
-                    <a href="https://github.com/CalebRD33/meet" target="blank">Check it out on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Poke&#769mon App</h2>
-                    <img src="img\pokedex.png" alt="Pokemon App Screenshot" class="grid-image">
-                    <p>
-                        In this simple pokemon app I used JavaScript to pull data from 
-                        an external online API and created buttons that trigger a modal that i created using Bootstrap. 
-                    </p>
-                    <p>
-                        JavaScript<br>
-                        Bootstrap<br>
-                        CSS<br>
-                        HTML
-                    </p>
-                    <a href="https://calebrd33.github.io/pokemon-app/" target="blank">Poke&#769dex App Live</a>
-                    <br>
-                    <a href="https://github.com/CalebRD33/pokemon-app" target="blank">Check it out on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Echo Live Chat</h2>
-                    <img src="img\Chat_App.png" alt="Chat App Screenshot" class="grid-image">
-                    <p>
-                        This simple mobile chat app was built using Gifted Chat and React Native. Users can login to their
-                        own account, choose a chat screen color, send messages, share their location, and share images. The app also uses 
-                        AsyncStorage and NetInfo to provide a limited offline experience when there is no connection.
-                    </p>
-                    <p>
-                        React Native<br>
-                        JavaScript<br>
-                        Expo<br>
-                        Firebase<br>
-                        Babel
-                    </p>
-                    <a href="https://github.com/CalebRD33/Chat_App">Check it out on Github</a>
-                </div>
+                    <div>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <a href="https://github.com/CalebRD33/meet">
+                        <button><i class="fab fa-github"></i>Code</button>
+                    </a>
+                    <a href="https://calebrd33.github.io/meet/">
+                        <button><i class="fas fa-power-off"></i>Demo</button>
+                    </a>                   
+                </div>                  
+                <img src="img/meet-laptop.png">
             </div>
+
+            <h1>Other Projects</h1>
+            <div class="other-projects">
+                <a href="https://calebrd33.github.io/myFlix-Angular/welcome">myFlix-Angular<a href="https://github.com/CalebRD33/myFlix-Angular"><i class="fab fa-github"></i></a></a>
+                <span class="separator">|</span>
+                <a href="https://calebrd33.github.io/pokemon-app/">Poke&#769dex<a href="https://github.com/CalebRD33/pokemon-app"><i class="fab fa-github"></i></a></a>
+                <span class="separator">|</span>
+                <a href="https://github.com/CalebRD33/myFlix-API">myFlix-API<a href="https://github.com/CalebRD33/myFlix-API"><i class="fab fa-github"></i></a></a>
+                <span class="separator">|</span>
+                <a href="https://calebrd33.github.io/to-do-list-app/">To-Do List<a href="https://github.com/CalebRD33/to-do-list-app"><i class="fab fa-github"></i></a></a>
+                <span class="separator">|</span>
+                <a href="https://aws.amazon.com/console">AWS Image Resizer<a href="https://aws.amazon.com/console"><i class="fab fa-github"></i></a></a>
+            </div>
+        
         </section>
 
-        <section class="about">
+        <section id="about">
             <img src="img/profile-picture.png" class="profile__portrait" alt="A photograph of me!">
             <h1>Hello World!</h1>
             <p> 
@@ -205,7 +162,7 @@
             <a href="https://github.com/CalebRD33" target="_blank">Check out some of my code.</a>
         </section>
 
-        <section class="about-me">
+        <section >
             <h1>Get to Know Me</h1>
             <hr class="custom-line">
             <h5>Things that i enjoy doing with a passion:</h5>
@@ -239,19 +196,19 @@
                     and SCUBA diving with an array of animals at the La Jolla under water canyon.
             </p>
 
-            <a href="https://www.linkedin.com/in/calebrd33" target="_blank" class="button" download>Download my CV</a>   
-            <h1>Contact</h1>
-            <hr class="custom-line">
-            <div class="contact-info">         
-                Caleb Dalrymple<br>
-                540 Ribbon Beach Way, #296<br>
-                Oceanside, CA 92058<br>
-                <br>
-                Telephone: <a href="tel:+17606138020"> (760) 613-8020</a>
-                <br>
-                Email: <a href="mailto:calebrd33@gmail.com">CalebRD33@gmail.com</a>
-                <br>
-            </div>
+            <section> </section><h1>Contact</h1>
+                
+                <div class="contact-info">         
+                    Caleb Dalrymple<br>
+                    540 Ribbon Beach Way, #296<br>
+                    Oceanside, CA 92058<br>
+                    <br>
+                    Telephone: <a href="tel:+17606138020"> (760) 613-8020</a>
+                    <br>
+                    Email: <a href="mailto:calebrd33@gmail.com">CalebRD33@gmail.com</a>
+                    <br>
+                </div>
+            </section>
             <!--<div class="contact-form-list">
                 <form action="http://www.example.com/example.htm" method="post" id="contact-form">
                     <label class="standard-label" for="contact-email">E-mail: </label>
