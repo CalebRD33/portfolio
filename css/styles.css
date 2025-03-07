@@ -39,7 +39,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -140,7 +140,7 @@ header button i {
 
 #projects h1 {
   text-align: center;
-  margin-bottom: 50px;
+  
 }
 
 #projects button {
@@ -165,10 +165,10 @@ header button i {
 
 .myFlix {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 100px auto;
 }
 
 .myFlix img {
@@ -178,10 +178,10 @@ header button i {
 
 .echo {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 100px auto;
 }
 
 .echo img {
@@ -192,10 +192,10 @@ header button i {
 
 .meet {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 100px auto;
 }
 
 .meet img {
@@ -228,16 +228,6 @@ header button i {
 button:hover, button:focus {
   cursor: pointer;
   opacity: 0.8;
-}
-
-.about-me-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.about-me {
-  margin: 0 50px;
-  text-align: center;
 }
 
 .contact {
