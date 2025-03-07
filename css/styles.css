@@ -7,12 +7,16 @@
   --button-text-color: #ffffff;
 }
 
-/* ----------new-------------- */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 html {
@@ -221,35 +225,56 @@ header button i {
 }
 
 
-/* -------------new--------------- */
-
-
-
-button:hover, button:focus {
-  cursor: pointer;
-  opacity: 0.8;
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  margin-bottom: 200px;
 }
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between elements */
+}
+
+
+.profile__portrait {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#contact {
+  width: 60%; /* Adjust width as needed */
+  margin: 300px auto; /* Center horizontally */
+  text-align: center; /* Optionally center the text inside */
+}
+
+.contact-info {
+  float: center;
+}
+
 
 .contact {
   margin: 0 50px;
   text-align: center;
 }
 
-.contact-info {
-  margin-top: 30px;
-}
-
 .contact-form-list {
   width: 200px;
   margin: 0 auto;
   text-align: left;
-}
-
-.profile__portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
 }
 
 .page-footer {
@@ -264,10 +289,7 @@ button:hover, button:focus {
   text-decoration: none;
 }
 
-.profile {
-  max-width: 800px;
-  margin: 100px auto;
-}
+
 
 @media all and (max-width: 500px) {
   .grid {

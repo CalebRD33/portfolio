@@ -25,7 +25,7 @@
                 <ul>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <!--<li><a href="#skills">Skills</a></li>-->
                     <li><a href="#contact">Contact</a></li>
                     <a href="files/Resume_web-dev_CalebDalrymple.pdf" target="_blank" rel="noopener noreferrer">
                             <button><i class="fas fa-download" ></i>Download Resume</button>
@@ -59,7 +59,7 @@
                         <img src="img/LAX.jpg.webp" alt="LAX logo" class="work-history-item">
                         <img src="img/SoFi_Stadium_Logo.svg.png" alt="Sofi Stadium logo" class="work-history-item">
                         <img src="img/Suffolk.webp" alt="Suffolk logo" class="work-history-item">
-                        <img src="img/Caltrans.svg.png" alt="Caltran logo" class="work-history-item">
+                        <img src="img/Caltrans.svg.png" alt="Caltrans logo" class="work-history-item">
                     </div>
                 </div>
             </div>
@@ -93,12 +93,12 @@
                         <button><i class="fas fa-file-alt"></i>Case Study</button>
                     </a>
                 </div>                         
-                <img src="img/myFlix-laptop-phone.png">                
+                <img src="img/myFlix-laptop-phone.png" alt="A photograph of a laptop portraying the live site">                
             </div>
             <hr class="custom-line">
 
             <div class="echo"> 
-                <img src="img/Echo-phonescreen.png">
+                <img src="img/Echo-phonescreen.png" alt="A photograph of a mobile phone portraying the live site">
                 <div class="text-box">
                     <p>
                         This simple mobile chat app was built with React Native. 
@@ -146,7 +146,7 @@
                         <button><i class="fas fa-file-alt"></i>Case Study</button>
                     </a>                    
                 </div>                  
-                <img src="img/meet-laptop.png">
+                <img src="img/meet-laptop.png" alt="A photograph of a laptop portraying the live site">
             </div>
 
             <h1>Other Projects</h1>
@@ -165,64 +165,56 @@
         </section>
 
         <section id="about">
-            <img src="img/profile-picture.png" class="profile__portrait" alt="A photograph of me!">
-            <h1>Hello World!</h1>
-            <p> 
-                My name is Caleb Dalrymple. I just completed a 10 month full-stack web development course with CareerFoundry and 
-                couldn’t be more excited to dive into the tech world! I’m eager to put my new skills into practice and contribute to 
-                impactful projects.
-            </p>
-            <a href="https://github.com/CalebRD33" target="_blank">Check out some of my code.</a>
+            <div class="about-me">
+                <div class="photo">
+                    <img src="img/profile-picture.png" class="profile__portrait" alt="A photograph of me!">
+                    <div class="icons">
+                        <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">
+                            <img src="img/github_icon.svg" alt="Github">
+                        </a>
+                        <a href="https://www.linkedin.com/in/calebrd33" target="blank" rel="noopener noreferrer" class="media-links">
+                            <img src="img/linkedin_icon.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://careerfoundry.slack.com/team/U06MTBNUHP0" target="blank" rel="noopener noreferrer" class="media-links">
+                            <img src="img/slack_icon.svg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <h1>Hello World!</h1>
+                    <p> 
+                        My name is Caleb Dalrymple. I just completed a 10 month full-stack web development course with CareerFoundry and 
+                        couldn’t be more excited to dive into the tech world! I’m eager to put my new skills into practice and contribute to 
+                        impactful projects.
+                    </p>
+                    
+                    <h5>Favorite Tools:</h5>
+                    <div class="tools">
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-angular"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-        <section >
-            <h1>Get to Know Me</h1>
-            <hr class="custom-line">
-            <h5>Things that i enjoy doing with a passion:</h5>
+        <section id="contact">
+            <h1>Contact</h1>
             
-            <ul class="about-me-list">
-                <li>
-                    Front-end development
-                </li>
-                <li>
-                    UI/UX design
-                </li>
-                <li>
-                    Riding my motorcycle
-                </li>
-                <li>
-                    Skateboarding
-                </li>
-                <li>
-                    SCUBA Diving
-                </li>
-            </ul>
-
-            <p> 
-                As you can see, I have just started my journey to becoming a fullstack web developer. All of my previous work experience
-                has been in a totally different industry but the program i started with CareerFoundry has fueled my excitement about switching
-                careers and potentially being able to work remote. I'm excited about working remotely because this will allow me to travel more with my wife.
-                <br><br>
-                As for my life outside of work, I currently live in San Diego, CA so i don't have much to complain about! The weather is great, 
-                I'm never at a loss of fun things to do, and the general atmosphere of active lifestyles and healthy eating fit my wife and I perfectly.
-                    You will find me riding my motorcycle through the mountains, skateboarding to the beach for some fun in the sun, 
-                    and SCUBA diving with an array of animals at the La Jolla under water canyon.
-            </p>
-
-            <section>
-                <h1>Contact</h1>
-                
-                <div class="contact-info">         
-                    Caleb Dalrymple<br>
-                    540 Ribbon Beach Way, #296<br>
-                    Oceanside, CA 92058<br>
-                    <br>
-                    Telephone: <a href="tel:+17606138020"> (760) 613-8020</a>
-                    <br>
-                    Email: <a href="mailto:calebrd33@gmail.com">CalebRD33@gmail.com</a>
-                    <br>
-                </div>
-            </section>
+            <div class="contact-info">         
+                Caleb Dalrymple<br>
+                540 Ribbon Beach Way, #296<br>
+                Oceanside, CA 92058<br>
+                <br>
+                Telephone: <a href="tel:+17606138020"> (760) 613-8020</a>
+                <br>
+                Email: <a href="mailto:calebrd33@gmail.com">CalebRD33(at)gmail.com</a>
+                <br>
+            </div>
+        </section>
             <!--<div class="contact-form-list">
                 <form action="http://www.example.com/example.htm" method="post" id="contact-form">
                     <label class="standard-label" for="contact-email">E-mail: </label>
@@ -236,10 +228,7 @@
                     
                     <input type="submit" value="Send Message">
                 </form>
-            </div> -->      
-        </section> 
-
-
+            </div> --> 
 
         <footer class="page-footer">
             <p>Find me on...</p>
