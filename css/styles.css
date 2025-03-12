@@ -1,5 +1,5 @@
+/*
 :root {
-  --primary-link-color: #005baf;
 
   --button-color: #e1e1e1;
   --button-color-active: #489c79;
@@ -7,6 +7,7 @@
   --button-text-color: #ffffff;
 }
 
+*/
 
 * {
   margin: 0;
@@ -20,14 +21,14 @@ button:hover, button:focus {
 }
 
 html {
-  scroll-padding-top: 100px; /* Adjust based on your nav height */
+  scroll-padding-top: 75px; 
 }
 
 body {
   font-family: Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #000;
+  background-color: #636060;
+  color: #fff;
 }
 
 nav {
@@ -123,24 +124,53 @@ header button i {
   margin-right: 8px;
 }
 
-.employment-history {
+.previous-clients {
   margin-top: 50px;
 }
 
-.work-history {
+.clients {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%; 
+  max-width: 50%; 
   margin: 0 auto;
 }
 
-.work-history-item {
-  width: 150px;  
+.client-logos {
+  max-width: 150px;  
   height: auto;
   margin: 0 auto;
 }
 
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  margin-bottom: 200px;
+}
+
+.profile__portrait {
+  width: 300px;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between elements */
+}
 
 #projects h1 {
   text-align: center;
@@ -219,78 +249,58 @@ header button i {
   margin-left: 8px;
 }
 
-.separator {
-  color: black;
-  font-size: 20px;
-}
-
-
-.about-me {
-  display: flex;
-  justify-content: center;
-  padding-top: 200px;
-  margin-bottom: 200px;
-}
-
-.photo {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin-right: 40px;
+  background: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+.contact-form {
+  max-width: 800px;
+  padding: 100px 0;
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Adds spacing between elements */
+.contact-form h2 {
+  float: left;
+  margin-bottom: 15px;
 }
 
-
-.profile__portrait {
-  width: 300px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
 }
-
-#contact {
-  width: 60%; /* Adjust width as needed */
-  margin: 300px auto; /* Center horizontally */
-  text-align: center; /* Optionally center the text inside */
+.contact-form textarea {
+  height: 100px;
+  resize: none;
 }
-
-.contact-info {
-  float: center;
+.contact-form button {
+  float: right;
+  background: #000;
+  color: white;
+  border-width: 3px;
+  border-color: #04b849;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-
-.contact {
-  margin: 0 50px;
-  text-align: center;
+.contact-form button:hover {
+  background: #04b849;
 }
-
-.contact-form-list {
-  width: 200px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.media-links {
-  text-decoration: none;
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 15px;
+  }
 }
 
 
 
+/* old */
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;

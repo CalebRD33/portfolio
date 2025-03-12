@@ -6,13 +6,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Caleb Dalrymple - Portfolio</title>
-        <link rel="shortcut icon" href="img/favicon-32x32.png"> 
+        <link rel="shortcut icon" href="img/crd-logo-2.png"> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     
     <body>
@@ -23,8 +23,8 @@
                 </a>
 
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <!--<li><a href="#skills">Skills</a></li>-->
                     <li><a href="#contact">Contact</a></li>
                     <a href="files/Resume_web-dev_CalebDalrymple.pdf" target="_blank" rel="noopener noreferrer">
@@ -36,7 +36,7 @@
         
         
         <header>
-            <div class="container">
+            <div>
                 <h1>MEET CALEB DALRYMPLE</h1>
                 <p>Passionately</p>
                 <p>Perfecting</p>
@@ -53,21 +53,54 @@
                     </a>
                 </div>
                 
-                <div class="employment-history">
+                <div class="previous-clients">
                     <h6>PREVIOUS CLIENTS</h6>
-                    <div class="work-history">
-                        <img src="img/LAX.jpg.webp" alt="LAX logo" class="work-history-item">
-                        <img src="img/SoFi_Stadium_Logo.svg.png" alt="Sofi Stadium logo" class="work-history-item">
-                        <img src="img/Suffolk.webp" alt="Suffolk logo" class="work-history-item">
-                        <img src="img/Caltrans.svg.png" alt="Caltrans logo" class="work-history-item">
+                    <div class="clients">
+                        <img src="img/LAX.jpg.webp" alt="LAX logo" class="client-logos">
+                        <img src="img/SoFi_Stadium_Logo.svg.png" alt="Sofi Stadium logo" class="client-logos">
+                        <img src="img/Suffolk.webp" alt="Suffolk logo" class="client-logos">
+                        <img src="img/Caltrans.svg.png" alt="Caltrans logo" class="client-logos">
                     </div>
                 </div>
             </div>
         </header>
 
+        <section id="about">
+            <div class="about-me">
+                <div class="photo">
+                    <img src="img/profile-picture.png" class="profile__portrait" alt="A photograph of me!">
+                    <div class="icons">
+                        <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">
+                            <img src="img/github_icon.svg" alt="Github">
+                        </a>
+                        <a href="https://www.linkedin.com/in/calebrd33" target="blank" rel="noopener noreferrer" class="media-links">
+                            <img src="img/linkedin_icon.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <h1>Hello World!</h1>
+                    <p> 
+                        My name is Caleb Dalrymple. I just completed a 10 month full-stack web development course with CareerFoundry and 
+                        couldn’t be more excited to dive into the tech world! I’m eager to put my new skills into practice and contribute to 
+                        impactful projects.
+                    </p>
+                    
+                    <h5>Favorite Tools:</h5>
+                    <div class="tools">
+                        <i class="fa-brands fa-react fa-3x"></i>
+                        <i class="fa-brands fa-angular fa-3x"></i>
+                        <i class="fa-brands fa-js fa-3x"></i>
+                        <i class="fa-brands fa-html5 fa-3x"></i>
+                        <i class="fa-brands fa-css3-alt fa-3x"></i>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <section id="projects">
-            <h1>Projects</h1>
-            <hr class="custom-line">
+        
             <div class="myFlix">  
                 <div class="text-box">
                     <p>
@@ -95,7 +128,6 @@
                 </div>                         
                 <img src="img/myFlix-laptop-phone.png" alt="A photograph of a laptop portraying the live site">                
             </div>
-            <hr class="custom-line">
 
             <div class="echo"> 
                 <img src="img/Echo-phonescreen.png" alt="A photograph of a mobile phone portraying the live site">
@@ -122,7 +154,6 @@
                     </a>                  
                 </div>
             </div>
-            <hr class="custom-line">
 
             <div class="meet"> 
                 <div class="text-box">
@@ -149,7 +180,6 @@
                 <img src="img/meet-laptop.png" alt="A photograph of a laptop portraying the live site">
             </div>
 
-            <h1>Other Projects</h1>
             <div class="other-projects">
                 <a href="https://calebrd33.github.io/myFlix-Angular/welcome" target="_blank" rel="noopener noreferrer">myFlix-Angular<i class="fas fa-power-off"></i>
                     <a href="https://github.com/CalebRD33/myFlix-Angular" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -167,78 +197,22 @@
                 </a>
                 <!--<span class="separator">|</span>
                 <a href="https://aws.amazon.com/console" target="_blank" rel="noopener noreferrer">AWS Image Resizer<a href="https://aws.amazon.com/console"><i class="fab fa-github"></i></a></a> -->
-            </div>
-        
+            </div>        
         </section>
 
-        <section id="about">
-            <div class="about-me">
-                <div class="photo">
-                    <img src="img/profile-picture.png" class="profile__portrait" alt="A photograph of me!">
-                    <div class="icons">
-                        <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">
-                            <img src="img/github_icon.svg" alt="Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/calebrd33" target="blank" rel="noopener noreferrer" class="media-links">
-                            <img src="img/linkedin_icon.svg" alt="LinkedIn">
-                        </a>
-                        <a href="https://careerfoundry.slack.com/team/U06MTBNUHP0" target="blank" rel="noopener noreferrer" class="media-links">
-                            <img src="img/slack_icon.svg" alt="Twitter">
-                        </a>
-                    </div>
-                </div>
-                <div class="text-box">
-                    <h1>Hello World!</h1>
-                    <p> 
-                        My name is Caleb Dalrymple. I just completed a 10 month full-stack web development course with CareerFoundry and 
-                        couldn’t be more excited to dive into the tech world! I’m eager to put my new skills into practice and contribute to 
-                        impactful projects.
-                    </p>
-                    
-                    <h5>Favorite Tools:</h5>
-                    <div class="tools">
-                        <i class="fa-brands fa-react"></i>
-                        <i class="fa-brands fa-angular"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h1>Contact</h1>
-            
-            <div class="contact-info">         
-                Caleb Dalrymple<br>
-                540 Ribbon Beach Way, #296<br>
-                Oceanside, CA 92058<br>
-                <br>
-                Telephone: <a href="tel:+17606138020"> (760) 613-8020</a>
-                <br>
-                Email: <a href="mailto:calebrd33@gmail.com">CalebRD33(at)gmail.com</a>
-                <br>
-            </div>
-        </section>
-            <!--<div class="contact-form-list">
-                <form action="http://www.example.com/example.htm" method="post" id="contact-form">
-                    <label class="standard-label" for="contact-email">E-mail: </label>
-                    <input type="email" id="contact-email" required>
-                    <br>
-                    <label class="standard-label" for="contact-phone">Telephone: </label>
-                    <input type="tel" id="contact-phone">
-                    <br>
-                    <label class="standard-label" for="contact-message">Message: </label>
-                    <textarea maxlength="240" id="contact-message" required></textarea>
-                    
-                    <input type="submit" value="Send Message">
+        <footer id="contact">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="mailto:CalebRD33@gmail.com" method="post" enctype="text/plain">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="message" placeholder="Your Message" required></textarea>
+                  <button type="submit">Send</button>
                 </form>
-            </div> --> 
-
-        <footer class="page-footer">
-            <p>Find me on...</p>
+            </div>
+        </footer> 
+        <!--
+        <p>Find me on...</p>
             <div class="social-media">
                 <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">
                     <img src="img/github_icon.svg" alt="Github">
@@ -250,9 +224,7 @@
                     <img src="img/slack_icon.svg" alt="Twitter">
                 </a>
             </div>
-            <a href="#">Back to top of page</a>
-        </footer> 
-    
+            -->
         
         <script src="js/tota11y.min.js"></script>
     </body>
