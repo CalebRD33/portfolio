@@ -21,7 +21,7 @@ button:hover, button:focus {
 }
 
 html {
-  scroll-padding-top: 75px; 
+  scroll-padding-top: 150px; 
 }
 
 body {
@@ -92,7 +92,7 @@ header {
   background: #000;
   color: white;
   text-align: center;
-  padding: 120px 0 50px;
+  padding: 250px 0 50px;
 }
 
 header h1 {
@@ -143,20 +143,37 @@ header button i {
 }
 
 
-.about-me {
+.about-container {
+  max-width: 70%;
   display: flex;
   justify-content: center;
-  padding-top: 200px;
-  margin-bottom: 200px;
+  align-items: center;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 200px auto;
 }
 
-.profile__portrait {
-  width: 300px;
+.about-img {
+  padding: 15px;
+  max-width: 300px;
+}
+
+.about-img img {
+  width: 100%;
   height: auto;
-  border-radius: 5%;
-  margin-bottom: 20px;
+  border-radius: 15px;
 }
 
+.about-text {
+  padding: 15px;
+}
+
+.about-text p {
+  padding-bottom: 20px;
+}
+
+/*
 .photo {
   display: flex;
   justify-content: center;
@@ -169,31 +186,27 @@ header button i {
 .icons {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adds spacing between elements */
+  gap: 10px; 
+}
+*/
+
+.projects-container {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-#projects h1 {
-  text-align: center;
-  
-}
-
-#projects button {
+.projects-container button {
   color: #000;
   text-decoration: none;
   font-size: 1.1em;
   padding: 10px;
 }
 
-#projects button i {
+.projects-container button i {
   margin-right: 8px;
 }
 
-#projects a {
-  text-decoration: none;
-}
-
-.text-box {
-  width: 400px;
+.projects-container a {
   text-decoration: none;
 }
 
@@ -201,48 +214,66 @@ header button i {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: 100px auto;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
 }
 
 .myFlix img {
-  width: 600px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
+  border-radius: 5px;
 }
 
 .echo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: 100px auto;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
 }
 
 .echo img {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: auto;
-  margin-right: 50px;
 }
 
 .meet {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: 100px auto;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
 }
 
 .meet img {
-  width: 600px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
+  border-radius: 5px;
 }
 
 .other-projects {
   display: flex;
-  gap: 10px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
   margin-bottom: 75px;
+}
+
+.other-projects a {
+  color: #fff;
+}
+
+.other-projects a:hover {
+  color: #000;
 }
 
 .other-projects i {
@@ -292,68 +323,41 @@ footer {
 .contact-form button:hover {
   background: #04b849;
 }
-@media (max-width: 480px) {
+@media (max-width: 1100px) {
   .contact-form {
     padding: 15px;
   }
-}
+  .about-container {
+    flex-direction: column;
+    margin: 40px auto;
+  }
 
+  .myFlix {
+    flex-direction: column-reverse;
+  }
 
+  .meet {
+    flex-direction: column-reverse;
+  }
 
-/* old */
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
+  .echo {
+    flex-direction: column-reverse;
   }
-  .profile {
-    max-width: 800px;
-    margin: 50px;
-  }
-}
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+  .nav75 {
+    width: 100%;
   }
-}
 
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+  header {
+    padding: 150px 0 5px;
   }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
-}
 
-@keyframes color-change {
-  from {
-    fill: #edc655;
+  header p {
+    font-size: 4em;
   }
-  to {
-    fill: #f76414;
+  
+  .other-projects {
+    flex-direction: column;
+    gap: 10px;
   }
 }
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px,48px)
-  }
-  to {
-    transform: translate(100px, 48px)
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px)
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
