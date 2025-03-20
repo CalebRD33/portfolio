@@ -12,17 +12,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     
     <body>
-        <nav>
-            <div class="nav75">
+        <nav class="nav-container">            
+            <div class="nav-bar">
                 <a href="#">
-                <img src="img/crd-logo-2.png" alt="Caleb's personal logo" class="page-header__item">
+                <img src="img/crd-logo-2.png" class="nav-logo" alt="Caleb's personal logo">
                 </a>
 
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <!--<li><a href="#skills">Skills</a></li>-->
@@ -32,26 +32,20 @@
                             <button><i class="fas fa-download" ></i>Download Resume</button>
                         </a>
                         -->
-                </ul>
-            </div>
+                </ul> 
+            </div>           
         </nav>
-        
-        
+                
         <header>
             <div>
-                <h1>MEET CALEB DALRYMPLE</h1>
+                <h5>MEET CALEB DALRYMPLE</h5>
                 <p>Passionately</p>
                 <p>Perfecting</p>
                 <p>Pixels</p>
-                <br/>
                 <h5>AN ENERGETIC AND PLAYFUL INDIVIDUAL WHO FINDS MEANING OUT OF SOLVING PROBLEMS FOR OTHERS</h5>
-                <br/>
                 <div class="header-buttons">
                     <a href="files/Dalrymple_Caleb_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <button><i class="fas fa-download"></i>Download Resume</button>
-                    </a>
-                    <a href="mailto:CalebRD33@gmail.com">
-                        <button><i class="fas fa-envelope"></i>Send Email</button>
+                        <button class="buttons"><i class="fas fa-download"></i>Download Resume</button>
                     </a>
                 </div>
                 <!--
@@ -69,8 +63,8 @@
 
         <section id="about">
             <div class="about-container">
-                <div class="about-img">
-                    <img src="img/profile-picture.png" alt="A photograph of me!">
+                <div class="about-img-container">
+                    <img src="img/profile-picture.png" class="about-img" alt="A photograph of me!">
                     <!--
                     <div class="icons">
                         <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">
@@ -82,7 +76,7 @@
                     </div>
                     -->
                 </div>
-                <div class="about-text">
+                <div class="about-text-container">
                     <h1>Hi, I'm Caleb!</h1>
                     <p> 
                         I just completed the 10 month Full-Stack Web Development Program with CareerFoundry and 
@@ -105,7 +99,7 @@
 
         <section id="projects">
             <div class="projects-container">
-                <div class="myFlix">  
+                <div class="desktop-container">  
                     <div>
                         <h1>myFlix React</h1>
                         <p>
@@ -134,7 +128,7 @@
                     <img src="img/myFlix.png" alt="A photograph of a laptop portraying the live site">                
                 </div>
 
-                <div class="echo"> 
+                <div class="mobile-container"> 
                     <div>
                         <h1>Echo - Live Chat</h1>
                         <p>
@@ -161,7 +155,7 @@
                     <img src="img/Echo-phonescreen.png" alt="A photograph of a mobile phone portraying the live site">                 
                 </div>
 
-                <div class="meet"> 
+                <div class="desktop-container"> 
                     <div>
                         <h1>Meet App</h1>
                         <p>
