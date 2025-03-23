@@ -18,20 +18,15 @@
     <body>
         <nav class="nav-container">            
             <div class="nav-bar">
-                <a href="#">
+                <a href="#" aria-label="Scroll to top of page">
                 <img src="img/crd-logo-2.png" class="nav-logo" alt="Caleb's personal logo">
                 </a>
 
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about" aria-label="Scroll to About Section">About</a></li>
                     <!--<li><a href="#skills">Skills</a></li>-->
-                    <li><a href="#contact">Contact</a></li>
-                    <!--
-                    <a href="files/Resume_web-dev_CalebDalrymple.pdf" target="_blank" rel="noopener noreferrer">
-                            <button><i class="fas fa-download" ></i>Download Resume</button>
-                        </a>
-                        -->
+                    <li><a href="#projects" aria-label="Scroll to Projects Section">Projects</a></li>
+                    <li><a href="#contact" aria-label="Scroll to Contact Section">Contact</a></li>                    
                 </ul> 
             </div>           
         </nav>
@@ -47,44 +42,24 @@
                     <a href="files/Dalrymple_Caleb_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <button class="buttons"><i class="fas fa-download"></i>Download Resume</button>
                     </a>
-                </div>
-                <!--
-                <div class="previous-clients">
-                    <h6>PREVIOUS CLIENTS</h6>
-                    <div class="clients">
-                        <img src="img/LAX.jpg.webp" alt="LAX logo" class="client-logos">
-                        <img src="img/SoFi_Stadium_Logo.svg.png" alt="Sofi Stadium logo" class="client-logos">
-                        <img src="img/Suffolk.webp" alt="Suffolk logo" class="client-logos">
-                        <img src="img/Caltrans.svg.png" alt="Caltrans logo" class="client-logos">
-                    </div>
-                </div> -->
+                </div>                
             </div>
         </header>
 
         <section id="about">
             <div class="about-container">
                 <div class="about-img-container">
-                    <img src="img/profile-picture.png" class="about-img" alt="A photograph of me!">
-                    <!--
-                    <div class="icons">
-                        <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">
-                            <img src="img/github_icon.svg" alt="Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/calebrd33" target="blank" rel="noopener noreferrer" class="media-links">
-                            <img src="img/linkedin_icon.svg" alt="LinkedIn">
-                        </a>
-                    </div>
-                    -->
+                    <img src="img/profile-picture.png" class="about-img" alt="A photograph of Caleb!">                
                 </div>
                 <div class="about-text-container">
                     <h1>Hi, I'm Caleb!</h1>
                     <p> 
-                        I just completed the 10 month Full-Stack Web Development Program with CareerFoundry and 
+                        I recently completed the 10 month Full-Stack Web Development Program with CareerFoundry and 
                         couldn’t be more excited to start a career in frontend web development! I’m eager to put my new skills into practice and contribute to 
                         impactful projects.
                     </p>
                     
-                    <h5>Favorite Tools:</h5>
+                    <h3>Favorite Tools:</h3>
                     <div class="tools">
                         <i class="fa-brands fa-react fa-3x"></i>
                         <i class="fa-brands fa-angular fa-3x"></i>
@@ -100,7 +75,7 @@
         <section id="projects">
             <div class="projects-container">
                 <div class="desktop-container">  
-                    <div>
+                    <div class="project-description">
                         <h1>myFlix React</h1>
                         <p>
                             The myFlix React app shows viewers information about movies pulled from the myFlix API. 
@@ -108,12 +83,12 @@
                             or delete their account. The UI was built using JavaScript and React framework.
                         </p>  
                         <div>
-                            <i class="fa-brands fa-react"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-node"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
+                            <i class="fa-brands fa-react fa-2x"></i>
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                            <i class="fa-brands fa-css3-alt fa-2x"></i>
+                            <i class="fa-brands fa-node fa-2x"></i>
+                            <i class="fa-brands fa-bootstrap fa-2x"></i>
                         </div>
                         <a href="https://github.com/CalebRD33/myFlix-React" target="_blank" rel="noopener noreferrer">
                             <button><i class="fab fa-github"></i>Code</button>
@@ -124,12 +99,14 @@
                         <a href="files/myFlix Case Study (1).pdf" target="_blank" rel="noopener noreferrer">
                             <button><i class="fas fa-file-alt"></i>Case Study</button>
                         </a>
-                    </div>                         
-                    <img src="img/myFlix.png" alt="A photograph of a laptop portraying the live site">                
+                    </div> 
+                    <div class="project-img">                        
+                        <img src="img/myFlix.png" alt="A Screenshot of myFlix - React Website">    
+                    </div>            
                 </div>
 
                 <div class="mobile-container"> 
-                    <div>
+                    <div class="project-description">
                         <h1>Echo - Live Chat</h1>
                         <p>
                             This simple mobile chat app was built with React Native. 
@@ -138,9 +115,9 @@
                             AsyncStorage and NetInfo are used to provide a limited offline experience.
                         </p> 
                         <div>
-                            <i class="fa-brands fa-react"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-aws"></i>
+                            <i class="fa-brands fa-react fa-2x"></i>
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-aws fa-2x"></i>
                         </div> 
                         <a href="files/Echo-LiveChat_Demo.mp4" target="_blank" rel="noopener noreferrer">
                             <button><i class="fas fa-play"></i>Watch</button>
@@ -152,21 +129,21 @@
                             <button><i class="fas fa-file-alt"></i>Case Study</button>
                         </a> 
                     </div>
-                    <img src="img/Echo-phonescreen.png" alt="A photograph of a mobile phone portraying the live site">                 
+                    <img src="img/Echo-phonescreen.png" alt="A photo of a mobile phone portraying the live site">                 
                 </div>
 
                 <div class="desktop-container"> 
-                    <div>
+                    <div class="project-description">
                         <h1>Meet App</h1>
                         <p>
                             Here I built a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. 
                             The application uses the Google Calendar API to fetch upcoming events.
                         </p>
                         <div>
-                            <i class="fa-brands fa-react"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-react fa-2x"></i>
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                            <i class="fa-brands fa-css3-alt fa-2x"></i>
                         </div>
                         <a href="https://github.com/CalebRD33/meet" target="_blank" rel="noopener noreferrer">
                             <button><i class="fab fa-github"></i>Code</button>
@@ -177,50 +154,59 @@
                         <a href="files/Meet_Case-Study.pdf" target="_blank" rel="noopener noreferrer">
                             <button><i class="fas fa-file-alt"></i>Case Study</button>
                         </a>                    
-                    </div>                  
-                    <img src="img/meet.png" alt="A photograph of a laptop portraying the live site">
+                    </div>  
+                    <div class="project-img">                  
+                        <img src="img/meet.png" alt="A Screenshot of the Meet App Website">
+                    </div>
                 </div>
 
                 <div class="other-projects">
                     <div>
-                    <a href="https://calebrd33.github.io/myFlix-Angular/welcome" target="_blank" rel="noopener noreferrer">myFlix-Angular<i class="fas fa-power-off"></i>
-                        <a href="https://github.com/CalebRD33/myFlix-Angular" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://calebrd33.github.io/myFlix-Angular/welcome" target="_blank" rel="noopener noreferrer" aria-label="Link to myFlix - Angular website">myFlix-Angular<i class="fas fa-power-off"></i>
+                        <a href="https://github.com/CalebRD33/myFlix-Angular" target="_blank" rel="noopener noreferrer" aria-label="Link to myFlix - Angular code on GitHub"><i class="fab fa-github"></i></a>
                     </a>
                     </div>
                     <div>
-                    <!--<span class="separator">|</span>-->
-                    <a href="https://calebrd33.github.io/pokemon-app/" target="_blank" rel="noopener noreferrer">Poke&#769dex<i class="fas fa-power-off"></i>
-                        <a href="https://github.com/CalebRD33/pokemon-app" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://calebrd33.github.io/pokemon-app/" target="_blank" rel="noopener noreferrer" aria-label="Link to Pokedex website">Poke&#769dex<i class="fas fa-power-off"></i>
+                        <a href="https://github.com/CalebRD33/pokemon-app" target="_blank" rel="noopener noreferrer" aria-label="Link to Pokedex code on GitHub"><i class="fab fa-github"></i></a>
                     </a>
                     </div>
-                    <!--<span class="separator">|</span>-->
                     <div>
-                    <a href="https://github.com/CalebRD33/myFlix-API" target="_blank" rel="noopener noreferrer">myFlix-API
-                        <a href="https://github.com/CalebRD33/myFlix-API" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></a>
+                    <a href="https://github.com/CalebRD33/myFlix-API" target="_blank" rel="noopener noreferrer" aria-label="Link to myFlix - API code on Github">myFlix-API<i class="fab fa-github"></i>
+                        </a>
                     </div>
-                    <!--<span class="separator">|</span>-->
                     <div>
-                    <a href="https://calebrd33.github.io/to-do-list-app/" target="_blank" rel="noopener noreferrer">To-Do List<i class="fas fa-power-off"></i>
-                        <a href="https://github.com/CalebRD33/to-do-list-app" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://calebrd33.github.io/to-do-list-app/" target="_blank" rel="noopener noreferrer" aria-label="Link to the To-Do List website">To-Do List<i class="fas fa-power-off"></i>
+                        <a href="https://github.com/CalebRD33/to-do-list-app" target="_blank" rel="noopener noreferrer" aria-label="Link to the To-Do List code on GitHub"><i class="fab fa-github"></i></a>
                     </a>
                     </div>
-                    <!--<span class="separator">|</span>
-                    <a href="https://aws.amazon.com/console" target="_blank" rel="noopener noreferrer">AWS Image Resizer<a href="https://aws.amazon.com/console"><i class="fab fa-github"></i></a></a> -->
+                    <!--<a href="https://aws.amazon.com/console" target="_blank" rel="noopener noreferrer">AWS Image Resizer<a href="https://aws.amazon.com/console"><i class="fab fa-github"></i></a></a> -->
                 </div> 
             </div>
         
         </section>
 
         <footer id="contact">
-            <div class="contact-form">
-                <h2>Contact Me</h2>
-                <form id="contact-form" action="https://formspree.io/f/movevwbv" method="post">
-                    <input type="hidden" name="_subject" value="New Contact Form Submission">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Contact Me</h2>
+                    <form id="contact-form" action="https://formspree.io/f/movevwbv" method="post">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="connect">
+                    <p>Connect:
+                    <a href="files/Dalrymple_Caleb_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <span>|</span>
+                    <a href="https://www.linkedin.com/in/calebrd33" target="blank" rel="noopener noreferrer" class="media-links">LinkedIn</a>
+                    <span>|</span>
+                    <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">GitHub</a>
+                    </p>
+                </div>
             </div>
         </footer> 
         
@@ -249,20 +235,6 @@
                 }
             });
         </script>
-        <!--
-        <p>Find me on...</p>
-            <div class="social-media">
-                <a href="https://github.com/CalebRD33" target="blank" rel="noopener noreferrer" class="media-links">
-                    <img src="img/github_icon.svg" alt="Github">
-                </a>
-                <a href="https://www.linkedin.com/in/calebrd33" target="blank" rel="noopener noreferrer" class="media-links">
-                    <img src="img/linkedin_icon.svg" alt="LinkedIn">
-                </a>
-                <a href="https://careerfoundry.slack.com/team/U06MTBNUHP0" target="blank" rel="noopener noreferrer" class="media-links">
-                    <img src="img/slack_icon.svg" alt="Twitter">
-                </a>
-            </div>
-            -->
         <script src="js/tota11y.min.js"></script>
     </body>
 </html>
