@@ -208,30 +208,52 @@
                     </p>
                 </div>
             </div>
+            <div id="toast-container"></div>
         </footer> 
         
         <script>
+            function showToast(message, type) {
+                const toastContainer = document.getElementById("toast-container");
+
+                const toast = document.createElement("div");
+                toast.classList.add("toast", type);
+                toast.textContent = message;
+
+                setTimeout(() => {
+                    toast.classList.add("show");
+                }, 100);
+
+                setTimeout(() => {
+                    toast.classList.remove("show");
+                    setTimeout(() => {
+                        toastContainer.removeChild(toast);
+                    }, 300);
+                }, 3000);
+
+                toastContainer.appendChild(toast);
+            }
+
             document.getElementById("contact-form").addEventListener("submit", async function(event) {
-                event.preventDefault(); // Prevent page reload
-            
+                event.preventDefault();
+
                 const form = event.target;
                 const formData = new FormData(form);
-            
+
                 try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: formData,
-                    headers: { "Accept": "application/json" }
-                });
-            
-                if (response.ok) {
-                    alert("Your message has been sent successfully!"); 
-                    form.reset(); // Clear the form
-                } else {
-                    alert("There was an error submitting the form. Please try again.");
-                }
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: formData,
+                        headers: { "Accept": "application/json" }
+                    });
+
+                    if (response.ok) {
+                        showToast("Your message has been sent successfully!", "success");
+                        form.reset(); 
+                    } else {
+                        showToast("There was an error submitting the form. Please try again.", "error");
+                    }
                 } catch (error) {
-                alert("There was a network error. Please try again later.");
+                    showToast("There was a network error. Please try again later.", "error");
                 }
             });
         </script>
