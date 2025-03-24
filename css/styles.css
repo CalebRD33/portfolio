@@ -193,9 +193,7 @@ footer {
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -204,15 +202,12 @@ footer {
   padding: 100px 0 50px;
 }
 
-.contact-form h2 {
-  float: left;
-  margin-bottom: 15px;
-}
+
 
 .contact-form input, .contact-form textarea {
   width: 100%;
   padding: 15px;
-  margin-bottom: 15px;
+  margin: 5px 0 15px;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;

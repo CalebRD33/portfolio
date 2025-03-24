@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
     </head>
     
     <body>
@@ -55,8 +55,11 @@
                     <h1>Hi, I'm Caleb!</h1>
                     <p> 
                         I recently completed the 10 month Full-Stack Web Development Program with CareerFoundry and 
-                        couldn’t be more excited to start a career in frontend web development! I’m eager to put my new skills into practice and contribute to 
-                        impactful projects.
+                        couldn’t be more excited to start a career in frontend web development! I’m eager to learn new technologies and contribute to 
+                        impactful projects. 
+                    </p>
+                    <p> 
+                        Outside of work, I love riding my motorcycle, SCUBA diving, skateboarding, and discovering new and old music.
                     </p>
                     
                     <h3>Favorite Tools:</h3>
@@ -192,9 +195,16 @@
                     <h2>Contact Me</h2>
                     <form id="contact-form" action="https://formspree.io/f/movevwbv" method="post">
                         <input type="hidden" name="_subject" value="New Contact Form Submission">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
                         <button type="submit">Send</button>
                     </form>
                 </div>
@@ -257,6 +267,5 @@
                 }
             });
         </script>
-        <script src="js/tota11y.min.js"></script>
     </body>
 </html>
